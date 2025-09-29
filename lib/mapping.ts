@@ -241,7 +241,7 @@ export default async function mapping(
  * @example
  * ```ts
  * const figi = await openfigi.mapping([
- *   { "idType":"TICKER", "idValue":"IBM", "exchCode": "UN" }
+ *   { "idType": "TICKER", "idValue": "IBM", "exchCode": "UN" }
  * ]);
  *
  * // Results:
