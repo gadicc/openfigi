@@ -1,4 +1,5 @@
 import mapping from "./mapping.ts";
+export { mapping };
 export * from "./mapping.ts";
 
 function envApiKey(): string | null | undefined {
