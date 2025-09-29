@@ -29,6 +29,8 @@ console.log(
 );
 ```
 
+**API docs**: https://jsr.io/@gadicc/openfigi/doc
+
 ## Intro
 
 > "The Open Financial Instrument Global Identifier web portal (OpenFIGI) is your
