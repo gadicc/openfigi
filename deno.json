@@ -28,5 +28,8 @@
   "fmt": {
     "include": ["."],
     "exclude": ["npm/", "tests/fixtures/http", "lib/all_values.ts"]
+  },
+  "publish": {
+    "exclude": ["tests"]
   }
 }
