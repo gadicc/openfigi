@@ -29,7 +29,7 @@ console.log(
 );
 ```
 
-**API docs**: https://jsr.io/@gadicc/openfigi/doc
+**API docs**: https://jsr.io/@gadicc/openfigi/doc/~/OpenFIGI
 
 ## Intro
 

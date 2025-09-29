@@ -11,6 +11,9 @@ import type {
 } from "./all_values.ts";
 export * from "./all_values.ts";
 
+/**
+ * The properties that can be used in a *Mapping Job*.
+ */
 export const mappingJobProperties = [
   "idType",
   "exchCode",
@@ -21,6 +24,9 @@ export const mappingJobProperties = [
   "securityType2",
   "stateCode",
 ] as const;
+/**
+ * The properties that can be used in a *Mapping Job*.
+ */
 export type MappingJobProperty = typeof mappingJobProperties[number];
 
 /**
@@ -59,13 +65,16 @@ export type IdType =
   | "ID_SHORT_CODE"
   | "VENDOR_INDEX_CODE";
 
+/** Options when performing a GET mapping request */
 export interface GetMappingParams {
   value: MappingJobProperty;
 }
+/** Response for a GET mapping request */
 export interface GetMappingResponse {
   values: string[];
 }
 
+/** Mapping Job criteria */
 export interface MappingRequest {
   // -- These two are always required -- //
 
@@ -155,8 +164,11 @@ export interface MappingRequest {
   /** State code of the desired instrument(s). */
   stateCode?: StateCodeValue;
 }
+
+/** Options when performing a POST mapping request */
 export type PostMappingRequest = MappingRequest[];
 
+/** The result format of a Mapping Job */
 export type MappingJobObject = {
   /**
    * @example "BBG000B9XVV8"
@@ -205,6 +217,7 @@ export type MappingJobObject = {
   metadata?: string | null;
 };
 
+/** Response for a POST mapping request */
 export interface PostMappingResponse {
   data?: MappingJobObject[];
 }

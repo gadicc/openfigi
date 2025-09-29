@@ -18,21 +18,39 @@ function envApiKey(): string | null | undefined {
  * @param apiKey Optional API key. If not provided, will look for `OPENFIGI_API_KEY` environment variable.
  * If not found, will proceed without an API key (with lower limits).
  *
- * @see {link https://www.openfigi.com/api/documentation#api-key}
- * @see {link https://www.openfigi.com/api/documentation#rate-limits}
+ * @example
+ * ```ts
+ * import OpenFIGI from "https://jsr.io/@gadicc/openfigi";
+ * const openfigi = new OpenFIGI(); // or with an API key
+ *
+ * console.log(await openfigi.mapping({ idType: "ID_ISIN", idValue: "US0378331005" }));
+ * ```
+ *
+ * @see https://www.openfigi.com/api/documentation#api-key
+ * @see https://www.openfigi.com/api/documentation#rate-limits
  */
 export default class OpenFIGI {
   BASE_URL = "https://api.openfigi.com/v3";
   API_KEY = envApiKey() as string | undefined | null;
 
-  constructtor(apiKey?: string) {
+  constructor(apiKey?: string) {
     if (apiKey) {
       this.API_KEY = apiKey;
     }
   }
 
+  /** See {@linkcode mapping} */
   mapping = mapping;
 
+  /**
+   * Internal fetch wrapper for common code used by modules, i.e.
+   * attach API key, set content-type, basic error checking, etc.
+   *
+   * @param endpoint API endpoint, e.g. `/mapping`
+   * @param opts Fetch options
+   * @returns Fetch Response
+   * @throws Error if response is not ok (status not in 200-299 range)
+   */
   async fetch(endpoint: string, opts: {
     method?: "GET" | "POST";
     body?: Record<string, unknown>;

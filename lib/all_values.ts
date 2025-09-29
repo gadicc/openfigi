@@ -5,6 +5,7 @@
  */
 
 /**
+ * All possible EXCHANGE CODE values
  * @see {@link https://api.openfigi.com/v3/mapping/values/exchCode | List of `exchCode` values}
  */
 export const exchCodeValues = [
@@ -1102,9 +1103,15 @@ export const exchCodeValues = [
   "ZS",
   "ZU"
 ] as const;
+
+/**
+ * All possible EXCHANGE CODE values
+ * @see {@link https://api.openfigi.com/v3/mapping/values/exchCode | List of `exchCode` values}
+ */
 export type ExchCodeValue = typeof exchCodeValues[number];
 
 /**
+ * All possible MIC CODE values
  * @see {@link https://api.openfigi.com/v3/mapping/values/micCode | List of `micCode` values}
  */
 export const micCodeValues = [
@@ -1582,9 +1589,15 @@ export const micCodeValues = [
   "YYYY",
   "ZFXM"
 ] as const;
+
+/**
+ * All possible MIC CODE values
+ * @see {@link https://api.openfigi.com/v3/mapping/values/micCode | List of `micCode` values}
+ */
 export type MicCodeValue = typeof micCodeValues[number];
 
 /**
+ * All possible CURRENCY values
  * @see {@link https://api.openfigi.com/v3/mapping/values/currency | List of `currency` values}
  */
 export const currencyValues = [
@@ -1919,9 +1932,15 @@ export const currencyValues = [
   "ZWN",
   "ZWR"
 ] as const;
+
+/**
+ * All possible CURRENCY values
+ * @see {@link https://api.openfigi.com/v3/mapping/values/currency | List of `currency` values}
+ */
 export type CurrencyValue = typeof currencyValues[number];
 
 /**
+ * All possible MARKET SECURITY DESCRIPTOR values
  * @see {@link https://api.openfigi.com/v3/mapping/values/marketSecDes | List of `marketSecDes` values}
  */
 export const marketSecDesValues = [
@@ -1936,9 +1955,15 @@ export const marketSecDesValues = [
   "Muni",
   "Pfd"
 ] as const;
+
+/**
+ * All possible MARKET SECURITY DESCRIPTOR values
+ * @see {@link https://api.openfigi.com/v3/mapping/values/marketSecDes | List of `marketSecDes` values}
+ */
 export type MarketSecDesValue = typeof marketSecDesValues[number];
 
 /**
+ * All possible SECURITY TYPE values
  * @see {@link https://api.openfigi.com/v3/mapping/values/securityType | List of `securityType` values}
  */
 export const securityTypeValues = [
@@ -2389,9 +2414,15 @@ export const securityTypeValues = [
   "ZERO COUPON",
   "ZERO COUPON, OID"
 ] as const;
+
+/**
+ * All possible SECURITY TYPE values
+ * @see {@link https://api.openfigi.com/v3/mapping/values/securityType | List of `securityType` values}
+ */
 export type SecurityTypeValue = typeof securityTypeValues[number];
 
 /**
+ * All possible ALTERNATE SECURITY TYPE values
  * @see {@link https://api.openfigi.com/v3/mapping/values/securityType2 | List of `securityType2` values}
  */
 export const securityType2Values = [
@@ -2582,9 +2613,15 @@ export const securityType2Values = [
   "Whole Loan",
   "Yield Curve"
 ] as const;
+
+/**
+ * All possible ALTERNATE SECURITY TYPE values
+ * @see {@link https://api.openfigi.com/v3/mapping/values/securityType2 | List of `securityType2` values}
+ */
 export type SecurityType2Value = typeof securityType2Values[number];
 
 /**
+ * All possible STATE CODE values
  * @see {@link https://api.openfigi.com/v3/mapping/values/stateCode | List of `stateCode` values}
  */
 export const stateCodeValues = [
@@ -2731,4 +2768,9 @@ export const stateCodeValues = [
   "YU",
   "ZJ"
 ] as const;
+
+/**
+ * All possible STATE CODE values
+ * @see {@link https://api.openfigi.com/v3/mapping/values/stateCode | List of `stateCode` values}
+ */
 export type StateCodeValue = typeof stateCodeValues[number];

@@ -3,18 +3,18 @@ import * as path from "@std/path";
 const OUTPUT_PATH = path.resolve("lib", "all_values.ts");
 
 const props = [
-  "exchCode",
-  "micCode",
-  "currency",
-  "marketSecDes",
-  "securityType",
-  "securityType2",
-  "stateCode",
+  ["exchCode", "All possible EXCHANGE CODE values."],
+  ["micCode", "All possible MIC CODE values."],
+  ["currency", "All possible CURRENCY values."],
+  ["marketSecDes", "All possible MARKET SECURITY DESCRIPTOR values."],
+  ["securityType", "All possible SECURITY TYPE values."],
+  ["securityType2", "All possible ALTERNATE SECURITY TYPE values."],
+  ["stateCode", "All possible STATE CODE values"],
 ];
 
-console.log("Fetching mapping values: " + props.join(", "));
+console.log("Fetching mapping values: " + props.map((x) => x[0]).join(", "));
 const mapped = await Promise.all(
-  props.map(async (prop) => {
+  props.map(async ([prop, desc]) => {
     const response = await fetch(
       "https://api.openfigi.com/v3/mapping/values/" + prop,
     );
@@ -25,7 +25,7 @@ const mapped = await Promise.all(
       );
     }
     const data = await response.json();
-    return { prop, values: data.values };
+    return { prop, desc, values: data.values };
   }),
 );
 
@@ -36,12 +36,18 @@ let out = `
  */
 `;
 
-for (const { prop, values } of mapped) {
+for (const { prop, desc, values } of mapped) {
   out += `
 /**
+ * ${desc}
  * @see {@link https://api.openfigi.com/v3/mapping/values/${prop} | List of \`${prop}\` values}
  */
 export const ${prop}Values = ${JSON.stringify(values, null, 2)} as const;
+
+/**
+ * ${desc}
+ * @see {@link https://api.openfigi.com/v3/mapping/values/${prop} | List of \`${prop}\` values}
+ */
 export type ${
     prop[0].toUpperCase() + prop.slice(1)
   }Value = typeof ${prop}Values[number];
