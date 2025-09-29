@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "test": "deno test -A"
+  },
+  "imports": {
+    "@gadicc/fetch-mock-cache": "jsr:@gadicc/fetch-mock-cache@^2.2.0",
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/expect": "jsr:@std/expect@^1.0.17",
+    "@std/testing": "jsr:@std/testing@^1.0.15"
+  }
+}
