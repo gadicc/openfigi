@@ -1,11 +1,23 @@
 {
+  "name": "@gadicc/openfigi",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Small typed API over OpenFIGI for better DX",
   "tasks": {
-    "test": "deno test -A"
+    "test": "deno test -A",
+    "retrieve": "deno run -A scripts/retrieve.ts",
+    "build:npm": "deno run -A scripts/build_npm.ts"
+  },
+  "exports": {
+    ".": "./lib/main.ts"
   },
   "imports": {
+    "@deno/dnt": "jsr:@deno/dnt@^0.42.3",
     "@gadicc/fetch-mock-cache": "jsr:@gadicc/fetch-mock-cache@^2.2.0",
     "@std/assert": "jsr:@std/assert@1",
     "@std/expect": "jsr:@std/expect@^1.0.17",
-    "@std/testing": "jsr:@std/testing@^1.0.15"
+    "@std/path": "jsr:@std/path@^1.1.2",
+    "@std/testing": "jsr:@std/testing@^1.0.15",
+    "semantic-release": "npm:semantic-release@^24.2.9"
   }
 }

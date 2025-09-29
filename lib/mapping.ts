@@ -1,7 +1,17 @@
 // https://www.openfigi.com/api/documentation#v3-post-mapping
 import type OpenFIGI from "./main.ts";
+import type {
+  CurrencyValue,
+  ExchCodeValue,
+  MarketSecDesValue,
+  MicCodeValue,
+  SecurityType2Value,
+  SecurityTypeValue,
+  StateCodeValue,
+} from "./all_values.ts";
+export * from "./all_values.ts";
 
-export const mappingValues = [
+export const mappingJobProperties = [
   "idType",
   "exchCode",
   "micCode",
@@ -11,7 +21,7 @@ export const mappingValues = [
   "securityType2",
   "stateCode",
 ] as const;
-export type MappingValueKey = typeof mappingValues[number];
+export type MappingJobProperty = typeof mappingJobProperties[number];
 
 /**
  * @see {link https://www.openfigi.com/api/documentation#v3-id-type-values}
@@ -50,77 +60,199 @@ export type IdType =
   | "VENDOR_INDEX_CODE";
 
 export interface GetMappingParams {
-  value: MappingValueKey;
+  value: MappingJobProperty;
 }
 export interface GetMappingResponse {
   values: string[];
 }
 
 export interface MappingRequest {
-  /**
-   * Type of third party identifier.
-   * @see {@linkcode IdType}
-   */
+  // -- These two are always required -- //
+
+  /** Type of third party identifier. */
   idType: IdType;
   /** The value for the represented third party identifier. */
   idValue: string;
-  // -- Above are required, below are optional -- //
+
+  // -- These rest are usually optional -- //
+
   /**
-   * Exchange code of the desired instrument(s) (cannot use in conjunction with `micCode`).
-   * @see {@link https://api.openfigi.com/v3/mapping/values/exchCode | List of `exchCode` values}
+   * Exchange code of the desired instrument(s) (cannot use in conjunction
+   * with `micCode`).
    */
-  exchCode?: string;
+  exchCode?: ExchCodeValue;
   /**
-   * ISO market identification code(MIC) of the desired instrument(s) (canno
-   * use in conjunction with `exchCode`)
-   * @see {@link https://api.openfigi.com/v3/mapping/values/micCode | List of `micCode` values}
+   * ISO market identification code(MIC) of the desired instrument(s)
+   * (cannot use in conjunction with `exchCode`)
    */
-  micCode?: string;
-  currency?: string;
-  marketSecDes?: string;
-  securityType?: string;
-  securityType2?: string;
+  micCode?: MicCodeValue;
+  /** Currency associated to the desired instrument(s). */
+  currency?: CurrencyValue;
+  /** Market sector description of the desired instrument(s). */
+  marketSecDes?: MarketSecDesValue;
+  /** Security type of the desired instrument(s). */
+  securityType?: SecurityTypeValue;
+  /**
+   * An alternative security type of the desired instrument(s).
+   * `securityType2` is typically less specific than `securityType`.
+   * Use Market sector description if securityType2 is not available.
+   * REQUIRED when `idType` is `BASE_TICKER` or `ID_EXCH_SYMBOL`.
+   */
+  securityType2?: SecurityType2Value | MarketSecDesValue;
+  /** Set to true to include equity instruments that are not listed on an exchange. */
   includeUnlistedEquities?: boolean;
+  /** Will filter instruments based on option type. */
   optionType?: "Call" | "Put";
-  strike?: [null, number] | [number, null];
-  contractSize?: [null, number] | [number, null];
-  coupon?: [null, number] | [number, null];
-  expiration?: [null, number] | [number, null];
-  maturity?: [null, number] | [number, null];
   /**
-   * State code of the desired instrument(s).
-   * @see {@link https://api.openfigi.com/v3/mapping/values/stateCode | List of `stateCode` values}
+   * Will find instruments whose strike price falls in an interval. Value
+   * should be an `Array` interval of the form `[a, b]` where `a`, `b` are
+   * `Numbers` or `null`. At least one entry must be a `Number`. When both
+   * are `Number`s, it is required that `a <= b`. Also, `[a, null]` is
+   * equivalent to the interval `[a, ∞)` and `[null, b]` is equivalent to
+   * (-∞, b] .
    */
-  stateCode?: string;
+  strike?: [null, number] | [number, null] | [number, number];
+  /**
+   * Will find instruments whose contract size falls in an interval. Value
+   * should be an `Array` interval of the form `[a, b]` where `a`, `b` are
+   * `Numbers` or `null`. At least one entry must be a `Number`. When both
+   * are `Number`s, it is required that `a <= b`. Also, `[a, null]` is
+   * equivalent to the interval `[a, ∞)` and `[null, b]` is equivalent to
+   * (-∞, b] .
+   */
+  contractSize?: [null, number] | [number, null] | [number, number];
+  /**
+   * Will find instruments whose coupon falls in an interval. Value
+   * should be an `Array` interval of the form `[a, b]` where `a`, `b` are
+   * `Numbers` or `null`. At least one entry must be a `Number`. When both
+   * are `Number`s, it is required that `a <= b`. Also, `[a, null]` is
+   * equivalent to the interval `[a, ∞)` and `[null, b]` is equivalent to
+   * (-∞, b] .
+   */
+  coupon?: [null, number] | [number, null] | [number, number];
+  /**
+   * Will find instruments whose expiration date falls in an interval. Value
+   * should be an `Array` interval of the form `[a, b]` where `a`, `b` are
+   * date `string` or `null`. At least one entry must be a date `string`.
+   * When both are date `string`s, it is required that `a` and `b` are not
+   * more than one year apart. Also, `[a, null]` is equivalent to the interval
+   * `[a, a + (1 year)]` and `[null, b]` is equivalent to `[b - (1 year), b]`.
+   *
+   * REQUIRED when `securityType2` is `Option` or `Warrant`.
+   */
+  expiration?: [null, string] | [string, null] | [string, string];
+  /**
+   * Will find instruments whose expiration date falls in an interval. Value
+   * should be an `Array` interval of the form `[a, b]` where `a`, `b` are
+   * date `string` or `null`. At least one entry must be a date `string`.
+   * When both are date `string`s, it is required that `a` and `b` are not
+   * more than one year apart. Also, `[a, null]` is equivalent to the interval
+   * `[a, a + (1 year)]` and `[null, b]` is equivalent to `[b - (1 year), b]`.
+   *
+   * REQUIRED when `securityType2` is `Pool`.
+   */
+  maturity?: [null, string] | [string, null] | [string, string];
+  /** State code of the desired instrument(s). */
+  stateCode?: StateCodeValue;
 }
 export type PostMappingRequest = MappingRequest[];
 
 export type MappingJobObject = {
+  /**
+   * @example "BBG000B9XVV8"
+   */
   figi: string;
-  // Enum-like attributes of the instrument.
-  securityType: string | null;
-  marketSector: string | null;
-  exchCode: string | null;
-  securityType2: string | null;
-  // Various attributes of the instrument.
+
+  // --- Enum-like attributes of the instrument. --- //
+
+  /**
+   * Security type of the desired instrument(s).
+   * @example "Common Stock"
+   */
+  securityType: SecurityTypeValue | null;
+  /**
+   * Market sector description of the desired instrument(s).
+   * @example "Equity"
+   */
+  marketSector: MarketSecDesValue | null;
+  /**
+   * Exchange code of the desired instrument(s).
+   * @example "UN"
+   */
+  exchCode: ExchCodeValue | null;
+  /**
+   * An alternative security type of the desired instrument(s).
+   * @example "Common Stock"
+   */
+  securityType2: SecurityType2Value | null;
+
+  // --- Various attributes of the instrument --- //
+
+  /**
+   * Ticker is a specific identifier for a financial instrument that reflects common usage.
+   * @example "AAPL"
+   */
   ticker: string | null;
+  /** @example "APPLE INC" */
   name: string | null;
+  /** @example "BBG001S5N8V8" */
   shareClassFIGI: string | null;
+  /** @example "BBG000B9XRY4" */
   compositeFIGI: string | null;
+  /** @example "AAPL" */
   securityDescription: string | null;
-  /** When the above attributes are unavailable or unable to be shown, this property is present. */
-  metadata?: "Metadata N/A" | unknown;
+  /** Exists when API is unable to show non-FIGI fields. */
+  metadata?: string | null;
 };
 
 export interface PostMappingResponse {
   data?: MappingJobObject[];
 }
 
+/**
+ * Get the current list of values for the enum-like properties on *Mapping Jobs*.
+ * @example
+ * ```ts
+ * // [ "Comdty", "Corp", "Curncy", "Equity", "Govt", "Index", "M-Mkt", ... ]
+ * const values = await openfigi.mapping({ value: "marketSecDes" });
+ * ```
+ */
 export default async function mapping(
   this: OpenFIGI,
   params: GetMappingParams,
 ): Promise<GetMappingResponse>;
 
+/**
+ * Map third party identifiers to FIGIs.
+ * @example
+ * ```ts
+ * const figi = await openfigi.mapping([
+ *   { "idType":"TICKER", "idValue":"IBM", "exchCode": "UN" }
+ * ]);
+ *
+ * // Results:
+ * [
+ *  {
+ *    "data": [
+ *      {
+ *        "figi": "BBG000NHN466",
+ *        "securityType": "Common Stock",
+ *        "marketSector": "Equity",
+ *        "ticker": "IBMGBX",
+ *        "name": "INTL BUSINESS MACHINES CORP",
+ *        "exchCode": "EU",
+ *        "shareClassFIGI": "BBG001S5S399",
+ *        "compositeFIGI": "BBG000NHN304",
+ *        "securityType2": "Common Stock",
+ *        "securityDescription": "IBMGBX"
+ *      }
+ *    ],
+ *    // ...
+ *  },
+ *  // ...
+ * ]
+ * ```
+ */
 export default async function mapping(
   this: OpenFIGI,
   params: PostMappingRequest,
@@ -136,10 +268,10 @@ export default async function mapping(
 
   // GetMappingParams
   if ("value" in params) {
-    if (!mappingValues.includes(params.value)) {
+    if (!mappingJobProperties.includes(params.value)) {
       throw new Error(
         `Invalid value for params.value. Must be one of: ${
-          mappingValues.join(
+          mappingJobProperties.join(
             ", ",
           )
         }`,

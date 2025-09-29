@@ -12,6 +12,15 @@ function envApiKey() {
   return null;
 }
 
+/**
+ * Creates a new OpenFIGI client.
+ *
+ * @param apiKey Optional API key. If not provided, will look for `OPENFIGI_API_KEY` environment variable.
+ * If not found, will proceed without an API key (with lower limits).
+ *
+ * @see {link https://www.openfigi.com/api/documentation#api-key}
+ * @see {link https://www.openfigi.com/api/documentation#rate-limits}
+ */
 export default class OpenFIGI {
   BASE_URL = "https://api.openfigi.com/v3";
   API_KEY = envApiKey();

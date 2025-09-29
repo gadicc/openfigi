@@ -5,7 +5,12 @@ A tiny type-safe API around OpenFIGI
 Copyright (c) 2025 by Gadi Cohen <dragon@wastelands.net>.
 [MIT licensed](./LICENSE.txt).
 
-See https://www.openfigi.com/. OpenAPI schema: https://api.openfigi.com/schema
+[![npm](https://img.shields.io/npm/v/openfigi)](https://www.npmjs.com/package/openfigi)
+[![Tests](https://github.com/gadicc/openfigi/actions/workflows/test-release.yaml/badge.svg)](https://github.com/gadicc/openfigi/actions/workflows/test-release.yaml)
+[![coverage](https://img.shields.io/codecov/c/github/gadicc/openfigi)](https://codecov.io/gh/gadicc/openfigi)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 ## Quick Start
 
@@ -33,7 +38,13 @@ console.log(
 _Source: https://openfigi.com/_
 
 This package provides a small wrapper for better DX in TypeScript. This is a
-**new package since October 2025** and is still a **work in progress**.
+**new package since October 2025** and is still a **work in progress**. Types
+and symbol names might still change, and feedback is welcome.
+
+OpenFIGI already provide an [OpenAPI schema](https://api.openfigi.com/schema).
+This package servers as an opinionated, less-verbose alternative to simply using
+the schema with regular tools - the overriding goal being a good developer
+experience (DX).
 
 ## Roadmap
 
@@ -43,3 +54,4 @@ This package provides a small wrapper for better DX in TypeScript. This is a
   - [ ] Filter
 
 - [ ] Validation
+- [ ] "next" support for long queries
