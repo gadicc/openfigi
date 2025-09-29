@@ -30,6 +30,7 @@ export const mappingJobProperties = [
 export type MappingJobProperty = typeof mappingJobProperties[number];
 
 /**
+ * Type of third party identifier.
  * @see {link https://www.openfigi.com/api/documentation#v3-id-type-values}
  */
 export type IdType =
