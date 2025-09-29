@@ -1,7 +1,7 @@
 import mapping from "./mapping.ts";
 export * from "./mapping.ts";
 
-function envApiKey() {
+function envApiKey(): string | null | undefined {
   const status = Deno.permissions.querySync({
     name: "env",
     variable: "OPENFIGI_API_KEY",
@@ -23,7 +23,7 @@ function envApiKey() {
  */
 export default class OpenFIGI {
   BASE_URL = "https://api.openfigi.com/v3";
-  API_KEY = envApiKey();
+  API_KEY = envApiKey() as string | undefined | null;
 
   constructtor(apiKey?: string) {
     if (apiKey) {
@@ -37,7 +37,7 @@ export default class OpenFIGI {
     method?: "GET" | "POST";
     body?: Record<string, unknown>;
     params?: Record<string, string | number>;
-  } = {}) {
+  } = {}): Promise<Response> {
     const headers = new Headers({
       "Content-Type": "application/json",
     });
