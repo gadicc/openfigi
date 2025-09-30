@@ -3,7 +3,8 @@
     "url": "https://api.openfigi.com/v3/filter",
     "method": "POST",
     "headers": {
-      "content-type": "application/json"
+      "content-type": "application/json",
+      "user-agent": "openfigi (https://www.npmjs.com/package/openfigi)"
     },
     "bodyJson": {
       "exchCode": "US"
@@ -19,14 +20,14 @@
       "content-type": "application/json; charset=utf-8",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
-      "date": "Tue, 30 Sep 2025 08:07:42 GMT",
+      "date": "Tue, 30 Sep 2025 08:54:15 GMT",
       "expires": "0",
       "origin-agent-cluster": "?1",
       "pragma": "no-cache",
       "ratelimit-limit": "5",
       "ratelimit-policy": "5;w=60",
-      "ratelimit-remaining": "4",
-      "ratelimit-reset": "60",
+      "ratelimit-remaining": "0",
+      "ratelimit-reset": "32",
       "referrer-policy": "no-referrer",
       "server": "istio-envoy",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -35,10 +36,10 @@
       "x-content-type-options": "nosniff",
       "x-dns-prefetch-control": "off",
       "x-download-options": "noopen",
-      "x-envoy-upstream-service-time": "1824",
+      "x-envoy-upstream-service-time": "15",
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
-      "x-request-id": "ef8cbaa7-2c55-406a-bd8d-428847ed8b6e",
+      "x-request-id": "46fa74f2-9ae1-4499-ab70-54375f01b827",
       "x-xss-protection": "0"
     },
     "bodyJson": {

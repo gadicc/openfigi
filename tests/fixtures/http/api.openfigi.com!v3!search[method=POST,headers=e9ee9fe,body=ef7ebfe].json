@@ -3,7 +3,8 @@
     "url": "https://api.openfigi.com/v3/search",
     "method": "POST",
     "headers": {
-      "content-type": "application/json"
+      "content-type": "application/json",
+      "user-agent": "openfigi (https://www.npmjs.com/package/openfigi)"
     },
     "bodyJson": {
       "query": "Apple"
@@ -19,7 +20,7 @@
       "content-type": "application/json; charset=utf-8",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
-      "date": "Tue, 30 Sep 2025 07:57:40 GMT",
+      "date": "Tue, 30 Sep 2025 08:58:30 GMT",
       "expires": "0",
       "origin-agent-cluster": "?1",
       "pragma": "no-cache",
@@ -35,10 +36,10 @@
       "x-content-type-options": "nosniff",
       "x-dns-prefetch-control": "off",
       "x-download-options": "noopen",
-      "x-envoy-upstream-service-time": "15",
+      "x-envoy-upstream-service-time": "190",
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
-      "x-request-id": "2a330b4b-40e7-4b58-9e5f-3486401fa207",
+      "x-request-id": "30f89167-18ca-4ad5-af45-e4bca2360bc6",
       "x-xss-protection": "0"
     },
     "bodyJson": {

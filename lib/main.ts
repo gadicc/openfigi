@@ -18,6 +18,10 @@ function envApiKey(): string | null | undefined {
   return null;
 }
 
+interface OpenFIGIOptions {
+  apiKey?: string;
+}
+
 /**
  * Creates a new OpenFIGI client.
  *
@@ -36,12 +40,22 @@ function envApiKey(): string | null | undefined {
  * @see https://www.openfigi.com/api/documentation#rate-limits
  */
 export default class OpenFIGI {
-  BASE_URL = "https://api.openfigi.com/v3";
-  API_KEY = envApiKey() as string | undefined | null;
+  baseUrl = "https://api.openfigi.com/v3";
+  apiKey = envApiKey() as string | undefined | null;
 
-  constructor(apiKey?: string) {
+  constructor();
+  constructor(apiKey?: string);
+  constructor(options?: OpenFIGIOptions);
+
+  constructor(apiKeyOrOptions: string | OpenFIGIOptions | undefined = {}) {
+    if (typeof apiKeyOrOptions === "string") {
+      this.apiKey = apiKeyOrOptions;
+      return;
+    }
+
+    const { apiKey } = apiKeyOrOptions;
     if (apiKey) {
-      this.API_KEY = apiKey;
+      this.apiKey = apiKey;
     }
   }
 
@@ -68,13 +82,12 @@ export default class OpenFIGI {
   } = {}): Promise<Response> {
     const headers = new Headers({
       "Content-Type": "application/json",
+      "User-Agent": "openfigi (https://www.npmjs.com/package/openfigi)",
+      ...(this.apiKey && { "X-OPENFIGI-APIKEY": this.apiKey }),
     });
-    if (this.API_KEY) {
-      headers.append("X-OPENFIGI-APIKEY", this.API_KEY);
-    }
 
     const response = await fetch(
-      this.BASE_URL + endpoint + (opts.params
+      this.baseUrl + endpoint + (opts.params
         ? "?" +
           new URLSearchParams(opts.params as Record<string, string>).toString()
         : ""),
