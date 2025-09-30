@@ -6,6 +6,7 @@
   "tasks": {
     "test": "deno test -A",
     "retrieve": "deno run -A scripts/retrieve.ts",
+    "exchanges": "deno run -A scripts/exchanges.ts",
     "build:npm": "deno run -A scripts/build_npm.ts",
     "pre-commit": "deno check lib/main.ts && deno lint && deno fmt --check"
   },
