@@ -44,6 +44,14 @@ const result = await openfigi.mapping([{
     ],
   },
 ];
+
+// or with openfigi.search()
+const result = await openfigi.filter({
+  query: "Amazon",
+  currency: "USD",
+  marketSecDes: "Equity",
+  securityType: "Common Stock",
+});
 ```
 
 **API docs**: https://jsr.io/@gadicc/openfigi/doc/~/OpenFIGI
