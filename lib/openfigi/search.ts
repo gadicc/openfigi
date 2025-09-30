@@ -1,5 +1,5 @@
-import type OpenFIGI from "./main.ts";
-import type { MappingJobObject, MappingRequest } from "./mapping.ts";
+import type OpenFIGI from "../openfigi.ts";
+import type { MappingJobObject, MappingRequest } from "../openfigi/mapping.ts";
 
 export interface SearchRequest
   extends Omit<MappingRequest, "idType" | "idValue"> {

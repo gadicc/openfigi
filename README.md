@@ -20,13 +20,30 @@ import OpenFIGI from "openfigi";
 // with optional: { apiKey: "" } or OPENFIGI_API_KEY in env.
 const openfigi = new OpenFIGI();
 
-console.log(
-  await openfigi.mapping({
-    idType: "TICKER",
-    idValue: "AAPL",
-    exchCode: "US",
-  }),
-);
+const result = await openfigi.mapping([{
+  idType: "TICKER",
+  idValue: "AAPL",
+  exchCode: "US",
+}]);
+
+[
+  {
+    data: [
+      {
+        figi: "BBG000B9XRY4",
+        name: "APPLE INC",
+        ticker: "AAPL",
+        exchCode: "US",
+        compositeFIGI: "BBG000B9XRY4",
+        securityType: "Common Stock",
+        marketSector: "Equity",
+        shareClassFIGI: "BBG001S5N8V8",
+        securityType2: "Common Stock",
+        securityDescription: "AAPL",
+      },
+    ],
+  },
+];
 ```
 
 **API docs**: https://jsr.io/@gadicc/openfigi/doc/~/OpenFIGI
@@ -73,12 +90,55 @@ experience (DX).
    typically require a commercial license and contractual controls, and even
    audits.
 
+## Exchange Info
+
+We provide exchange info and mappings from a number of publicly available
+sources. **They are neither complete nor guaranteed to be up-to-date**, however,
+are still useful. Since it's a lot of data, it's not part of the main export and
+you should import separately.
+
+```ts
+import { getExchange } from "openfigi/exchanges";
+const exchange = getExchange("UA") // or getExchange({ exchCode: "UA", ... })
+{
+  exchCode: "UA",
+  asOf: 2024,
+  type: "local",
+  figiName: "NYSEAmerican",
+  compositeCode: "US",
+  compositeName: "United States",
+  countryCode: "US",
+  trueComposite: true,
+  fullName: "NYSE American",
+  MIC: "XASE",
+  operatingMIC: "XNYS"
+}
+```
+
+All exchanges:
+
+```ts
+import { exchanges } from "openfigi/exchanges";
+exchanges;
+{
+  AC: {
+    exchCode: 'AC',
+    // ...
+  }
+}
+```
+
+See the [exchanges API docs](https://jsr.io/@gadicc/openfigi/doc/exchanges) for
+all methods.
+
+NB: only `getExchange()` automatically maps `MIC` and `operatingMIC` when
+available. When using other methods, you should combine with
+`getMICByExchCode()` and/or `getOperatingMICByExchCode()`.
+
+See [`scripts/mic_map.ts`](./scripts/mic_map.ts) and
+[`scripts/exchanges.ts`](./scripts/exchanges.ts) to see how this data is
+generated and what sources were used.
+
 ## Roadmap
 
-- [ ] APIs
-  - [x] Mapping
-  - [ ] Search
-  - [ ] Filter
-
 - [ ] Validation
-- [ ] "next" support for long queries

@@ -1,11 +1,11 @@
-import mapping from "./mapping.ts";
-import search from "./search.ts";
-import filter from "./filter.ts";
+import mapping from "./openfigi/mapping.ts";
+import search from "./openfigi/search.ts";
+import filter from "./openfigi/filter.ts";
 export { filter, mapping, search };
 
-export * from "./mapping.ts";
-export * from "./search.ts";
-export * from "./filter.ts";
+export * from "./openfigi/mapping.ts";
+export * from "./openfigi/search.ts";
+export * from "./openfigi/filter.ts";
 
 function envApiKey(): string | null | undefined {
   const status = Deno.permissions.querySync({

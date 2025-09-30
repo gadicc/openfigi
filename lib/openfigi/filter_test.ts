@@ -1,5 +1,5 @@
-import OpenFIGI from "../lib/main.ts";
-import { describe, expect, it, useCache } from "../tests/common.ts";
+import OpenFIGI from "../openfigi.ts";
+import { describe, expect, it, useCache } from "../../tests/common.ts";
 
 describe("filter", () => {
   useCache();

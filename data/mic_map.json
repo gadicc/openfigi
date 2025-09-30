@@ -1,0 +1,1619 @@
+{
+  "exchCode": {
+    "PF": {
+      "MIC": "APXL",
+      "operatingMIC": "APXL"
+    },
+    "UP": {
+      "MIC": "ARCX",
+      "operatingMIC": "XNYS"
+    },
+    "AQ": {
+      "MIC": "ASXP",
+      "operatingMIC": "XASX"
+    },
+    "QX": {
+      "MIC": "AQXE",
+      "operatingMIC": "AQXE"
+    },
+    "EB": {
+      "MIC": "BATE",
+      "operatingMIC": "BCXE"
+    },
+    "UF": {
+      "MIC": "BATS",
+      "operatingMIC": "BATS"
+    },
+    "VY": {
+      "MIC": "BATY",
+      "operatingMIC": "BATS"
+    },
+    "RB": {
+      "MIC": "BCSE",
+      "operatingMIC": "BCSE"
+    },
+    "XB": {
+      "MIC": "BOAT",
+      "operatingMIC": "BOAT"
+    },
+    "K3": {
+      "MIC": "BLNK",
+      "operatingMIC": "CHEV"
+    },
+    "B3": {
+      "MIC": "BLOX",
+      "operatingMIC": "BLOX"
+    },
+    "RZ": {
+      "MIC": "BMFX",
+      "operatingMIC": "BMFX"
+    },
+    "XV": {
+      "MIC": "BOTC",
+      "operatingMIC": "BCXE"
+    },
+    "AZ": {
+      "MIC": "BSEX",
+      "operatingMIC": "BSEX"
+    },
+    "BY": {
+      "MIC": "BURG",
+      "operatingMIC": "XOSL"
+    },
+    "UO": {
+      "MIC": "CBSX",
+      "operatingMIC": "XCBO"
+    },
+    "AH": {
+      "MIC": "CHIA",
+      "operatingMIC": "CHIA"
+    },
+    "JI": {
+      "MIC": "CHIJ",
+      "operatingMIC": "CHIJ"
+    },
+    "IX": {
+      "MIC": "CHIX",
+      "operatingMIC": "BCXE"
+    },
+    "TX": {
+      "MIC": "CHIC",
+      "operatingMIC": "CHIC"
+    },
+    "DD": {
+      "MIC": "DKTC",
+      "operatingMIC": "DKTC"
+    },
+    "DU": {
+      "MIC": "DIFX",
+      "operatingMIC": "DIFX"
+    },
+    "QD": {
+      "MIC": "DSMD",
+      "operatingMIC": "DSMD"
+    },
+    "VJ": {
+      "MIC": "EDGA",
+      "operatingMIC": "EDGE"
+    },
+    "VK": {
+      "MIC": "EDGX",
+      "operatingMIC": "EDGE"
+    },
+    "AA": {
+      "MIC": "ENAX",
+      "operatingMIC": "ASEX"
+    },
+    "TE": {
+      "MIC": "ETLX",
+      "operatingMIC": "ETLX"
+    },
+    "GW": {
+      "MIC": "EUWX",
+      "operatingMIC": "XSTU"
+    },
+    "BW": {
+      "MIC": "XBRN",
+      "operatingMIC": "XBRN"
+    },
+    "FF": {
+      "MIC": "FNFI",
+      "operatingMIC": "XHEL"
+    },
+    "SF": {
+      "MIC": "FNSE",
+      "operatingMIC": "XSTO"
+    },
+    "TL": {
+      "MIC": "GSXL",
+      "operatingMIC": "GSXL"
+    },
+    "HM": {
+      "MIC": "HMTF",
+      "operatingMIC": "HMTF"
+    },
+    "XT": {
+      "MIC": "HOTC",
+      "operatingMIC": "ASEX"
+    },
+    "VH": {
+      "MIC": "HSTC",
+      "operatingMIC": "HSTC"
+    },
+    "UI": {
+      "MIC": "ICEL",
+      "operatingMIC": "ICEL"
+    },
+    "VF": {
+      "MIC": "IEXG",
+      "operatingMIC": "IEXG"
+    },
+    "RF": {
+      "MIC": "FNIS",
+      "operatingMIC": "XICE"
+    },
+    "JD": {
+      "MIC": "KABU",
+      "operatingMIC": "KABU"
+    },
+    "TK": {
+      "MIC": "LICA",
+      "operatingMIC": "LICA"
+    },
+    "L3": {
+      "MIC": "LIQU",
+      "operatingMIC": "LIQU"
+    },
+    "DG": {
+      "MIC": "LYNX",
+      "operatingMIC": "OMGA"
+    },
+    "MX": {
+      "MIC": "MALX",
+      "operatingMIC": "MALX"
+    },
+    "TR": {
+      "MIC": "MATN",
+      "operatingMIC": "MATN"
+    },
+    "IG": {
+      "MIC": "MCXX",
+      "operatingMIC": "MCXX"
+    },
+    "MQ": {
+      "MIC": "MESQ",
+      "operatingMIC": "XKLS"
+    },
+    "RX": {
+      "MIC": "MISX",
+      "operatingMIC": "MISX"
+    },
+    "IM": {
+      "MIC": "MTAA",
+      "operatingMIC": "XMIL"
+    },
+    "IF": {
+      "MIC": "MTAH",
+      "operatingMIC": "XMIL"
+    },
+    "PD": {
+      "MIC": "WMTF",
+      "operatingMIC": "XWAR"
+    },
+    "PG": {
+      "MIC": "MUNB",
+      "operatingMIC": "PLUS"
+    },
+    "QF": {
+      "MIC": "NEOE",
+      "operatingMIC": "NEOE"
+    },
+    "EI": {
+      "MIC": "NILX",
+      "operatingMIC": "NILX"
+    },
+    "NS": {
+      "MIC": "NOTC",
+      "operatingMIC": "NOTC"
+    },
+    "ES": {
+      "MIC": "NURD",
+      "operatingMIC": "NURO"
+    },
+    "NQ": {
+      "MIC": "NURO",
+      "operatingMIC": "NURO"
+    },
+    "TG": {
+      "MIC": "OMGA",
+      "operatingMIC": "OMGA"
+    },
+    "UV": {
+      "MIC": "OOTC",
+      "operatingMIC": "FINR"
+    },
+    "PX": {
+      "MIC": "OPEX",
+      "operatingMIC": "OPEX"
+    },
+    "UZ": {
+      "MIC": "PFTS",
+      "operatingMIC": "PFTS"
+    },
+    "QU": {
+      "MIC": "PFTQ",
+      "operatingMIC": "PFTS"
+    },
+    "PQ": {
+      "MIC": "OTCM",
+      "operatingMIC": "OTCM"
+    },
+    "CJ": {
+      "MIC": "PURE",
+      "operatingMIC": "XCNQ"
+    },
+    "QM": {
+      "MIC": "QMTF",
+      "operatingMIC": "QMTF"
+    },
+    "TT": {
+      "MIC": "XTAI",
+      "operatingMIC": "XTAI"
+    },
+    "RW": {
+      "MIC": "ROTC",
+      "operatingMIC": "ROTC"
+    },
+    "RR": {
+      "MIC": "RTSX",
+      "operatingMIC": "MISX"
+    },
+    "RT": {
+      "MIC": "RUSX",
+      "operatingMIC": "RUSX"
+    },
+    "JE": {
+      "MIC": "SBIJ",
+      "operatingMIC": "SBIJ"
+    },
+    "JW": {
+      "MIC": "SBIU",
+      "operatingMIC": "SBIJ"
+    },
+    "H1": {
+      "MIC": "SHSC",
+      "operatingMIC": "XHKG"
+    },
+    "S1": {
+      "MIC": "SGMX",
+      "operatingMIC": "SGMX"
+    },
+    "TY": {
+      "MIC": "SIGX",
+      "operatingMIC": "SIGX"
+    },
+    "A0": {
+      "MIC": "SHAR",
+      "operatingMIC": "SHAR"
+    },
+    "SI": {
+      "MIC": "SIMV",
+      "operatingMIC": "SIMV"
+    },
+    "H2": {
+      "MIC": "SZSC",
+      "operatingMIC": "XHKG"
+    },
+    "TJ": {
+      "MIC": "TMXS",
+      "operatingMIC": "TMXS"
+    },
+    "MT": {
+      "MIC": "TOMX",
+      "operatingMIC": "TOMX"
+    },
+    "SZ": {
+      "MIC": "TRPX",
+      "operatingMIC": "TRPX"
+    },
+    "DX": {
+      "MIC": "TRQD",
+      "operatingMIC": "TRQX"
+    },
+    "TQ": {
+      "MIC": "TRQX",
+      "operatingMIC": "TRQX"
+    },
+    "TN": {
+      "MIC": "XATS",
+      "operatingMIC": "XATS"
+    },
+    "AP": {
+      "MIC": "XADE",
+      "operatingMIC": "ASEX"
+    },
+    "UD": {
+      "MIC": "XADF",
+      "operatingMIC": "FINR"
+    },
+    "DH": {
+      "MIC": "XADS",
+      "operatingMIC": "XADS"
+    },
+    "AG": {
+      "MIC": "XALG",
+      "operatingMIC": "XALG"
+    },
+    "JR": {
+      "MIC": "XAMM",
+      "operatingMIC": "XAMM"
+    },
+    "NA": {
+      "MIC": "XAMS",
+      "operatingMIC": "XAMS"
+    },
+    "AY": {
+      "MIC": "XARM",
+      "operatingMIC": "XARM"
+    },
+    "UA": {
+      "MIC": "XASE",
+      "operatingMIC": "XNYS"
+    },
+    "AT": {
+      "MIC": "XASX",
+      "operatingMIC": "XASX"
+    },
+    "GA": {
+      "MIC": "XATH",
+      "operatingMIC": "ASEX"
+    },
+    "TA": {
+      "MIC": "XATS",
+      "operatingMIC": "XATS"
+    },
+    "BM": {
+      "MIC": "XBAA",
+      "operatingMIC": "XBAA"
+    },
+    "BA": {
+      "MIC": "XBAB",
+      "operatingMIC": "XBAB"
+    },
+    "BI": {
+      "MIC": "XBAH",
+      "operatingMIC": "XBAH"
+    },
+    "SB": {
+      "MIC": "XBAR",
+      "operatingMIC": "BMEX"
+    },
+    "CE": {
+      "MIC": "XBCL",
+      "operatingMIC": "XBCL"
+    },
+    "AM": {
+      "MIC": "XBCX",
+      "operatingMIC": "XBCM"
+    },
+    "HO": {
+      "MIC": "XBCV",
+      "operatingMIC": "XBCV"
+    },
+    "BH": {
+      "MIC": "XBDA",
+      "operatingMIC": "XBDA"
+    },
+    "SG": {
+      "MIC": "XBEL",
+      "operatingMIC": "XBEL"
+    },
+    "GB": {
+      "MIC": "XBER",
+      "operatingMIC": "XBER"
+    },
+    "LB": {
+      "MIC": "XBEY",
+      "operatingMIC": "XBEY"
+    },
+    "SO": {
+      "MIC": "XBIL",
+      "operatingMIC": "BMEX"
+    },
+    "TB": {
+      "MIC": "XBKK",
+      "operatingMIC": "XBKK"
+    },
+    "BK": {
+      "MIC": "XBLB",
+      "operatingMIC": "XBLB"
+    },
+    "CR": {
+      "MIC": "XBNV",
+      "operatingMIC": "XBNV"
+    },
+    "CX": {
+      "MIC": "XBOG",
+      "operatingMIC": "XBOG"
+    },
+    "VB": {
+      "MIC": "XBOL",
+      "operatingMIC": "XBOL"
+    },
+    "IB": {
+      "MIC": "XBOM",
+      "operatingMIC": "XBOM"
+    },
+    "UB": {
+      "MIC": "XBOS",
+      "operatingMIC": "XNAS"
+    },
+    "BG": {
+      "MIC": "XBOT",
+      "operatingMIC": "XBOT"
+    },
+    "SK": {
+      "MIC": "XBRA",
+      "operatingMIC": "XBRA"
+    },
+    "SR": {
+      "MIC": "XBRN",
+      "operatingMIC": "XBRN"
+    },
+    "BB": {
+      "MIC": "XBRU",
+      "operatingMIC": "XBRU"
+    },
+    "IA": {
+      "MIC": "XBRV",
+      "operatingMIC": "XBRV"
+    },
+    "RE": {
+      "MIC": "XBSE",
+      "operatingMIC": "XBSE"
+    },
+    "HB": {
+      "MIC": "XBUD",
+      "operatingMIC": "XBUD"
+    },
+    "AF": {
+      "MIC": "XBUE",
+      "operatingMIC": "XBUE"
+    },
+    "BU": {
+      "MIC": "XBUL",
+      "operatingMIC": "XBUL"
+    },
+    "VR": {
+      "MIC": "XBVC",
+      "operatingMIC": "XBVC"
+    },
+    "EC": {
+      "MIC": "XCAI",
+      "operatingMIC": "XCAI"
+    },
+    "VS": {
+      "MIC": "BVCA",
+      "operatingMIC": "BVCA"
+    },
+    "MC": {
+      "MIC": "XCAS",
+      "operatingMIC": "XCAS"
+    },
+    "KY": {
+      "MIC": "XCAY",
+      "operatingMIC": "XCAY"
+    },
+    "UM": {
+      "MIC": "XCHI",
+      "operatingMIC": "XCHI"
+    },
+    "GU": {
+      "MIC": "XCIE",
+      "operatingMIC": "XCIE"
+    },
+    "UC": {
+      "MIC": "XCIS",
+      "operatingMIC": "XCIS"
+    },
+    "CF": {
+      "MIC": "XCNQ",
+      "operatingMIC": "XCNQ"
+    },
+    "SL": {
+      "MIC": "XCOL",
+      "operatingMIC": "XCOL"
+    },
+    "DC": {
+      "MIC": "XCSE",
+      "operatingMIC": "XCSE"
+    },
+    "CY": {
+      "MIC": "XCYS",
+      "operatingMIC": "XCYS"
+    },
+    "KH": {
+      "MIC": "XCSX",
+      "operatingMIC": "XCSX"
+    },
+    "DS": {
+      "MIC": "XCX2",
+      "operatingMIC": "CHIC"
+    },
+    "DK": {
+      "MIC": "XCXD",
+      "operatingMIC": "XCXD"
+    },
+    "TZ": {
+      "MIC": "XDAR",
+      "operatingMIC": "XDAR"
+    },
+    "IH": {
+      "MIC": "XDES",
+      "operatingMIC": "XDES"
+    },
+    "DB": {
+      "MIC": "XDFM",
+      "operatingMIC": "XDFM"
+    },
+    "BD": {
+      "MIC": "XDHA",
+      "operatingMIC": "XDHA"
+    },
+    "SY": {
+      "MIC": "XDSE",
+      "operatingMIC": "XDSE"
+    },
+    "DE": {
+      "MIC": "XDSX",
+      "operatingMIC": "XDSX"
+    },
+    "ID": {
+      "MIC": "XDUB",
+      "operatingMIC": "XDUB"
+    },
+    "GD": {
+      "MIC": "XDUS",
+      "operatingMIC": "XDUS"
+    },
+    "YC": {
+      "MIC": "XECM",
+      "operatingMIC": "XCYS"
+    },
+    "EK": {
+      "MIC": "XECS",
+      "operatingMIC": "XECS"
+    },
+    "BQ": {
+      "MIC": "XEQT",
+      "operatingMIC": "XBER"
+    },
+    "GY": {
+      "MIC": "XETR",
+      "operatingMIC": "XFRA"
+    },
+    "JF": {
+      "MIC": "XFKA",
+      "operatingMIC": "XFKA"
+    },
+    "DF": {
+      "MIC": "FNDK",
+      "operatingMIC": "XCSE"
+    },
+    "GF": {
+      "MIC": "XFRA",
+      "operatingMIC": "XFRA"
+    },
+    "TH": {
+      "MIC": "XGAT",
+      "operatingMIC": "TGAT"
+    },
+    "GN": {
+      "MIC": "XGHA",
+      "operatingMIC": "XGHA"
+    },
+    "GG": {
+      "MIC": "XGSE",
+      "operatingMIC": "XGSE"
+    },
+    "GL": {
+      "MIC": "XGTG",
+      "operatingMIC": "XGTG"
+    },
+    "EG": {
+      "MIC": "XGUA",
+      "operatingMIC": "XGUA"
+    },
+    "GH": {
+      "MIC": "XHAM",
+      "operatingMIC": "XHAM"
+    },
+    "GI": {
+      "MIC": "XHAN",
+      "operatingMIC": "XHAN"
+    },
+    "FH": {
+      "MIC": "XHEL",
+      "operatingMIC": "XHEL"
+    },
+    "NR": {
+      "MIC": "XHFT",
+      "operatingMIC": "XHFT"
+    },
+    "HK": {
+      "MIC": "XHKG",
+      "operatingMIC": "XHKG"
+    },
+    "VU": {
+      "MIC": "XHNX",
+      "operatingMIC": "HSTC"
+    },
+    "IR": {
+      "MIC": "XICE",
+      "operatingMIC": "XICE"
+    },
+    "TW": {
+      "MIC": "XICX",
+      "operatingMIC": "XICX"
+    },
+    "IJ": {
+      "MIC": "XIDX",
+      "operatingMIC": "XIDX"
+    },
+    "IQ": {
+      "MIC": "XIQS",
+      "operatingMIC": "XIQS"
+    },
+    "UL": {
+      "MIC": "XISE",
+      "operatingMIC": "XISX"
+    },
+    "TI": {
+      "MIC": "XIST",
+      "operatingMIC": "XIST"
+    },
+    "JA": {
+      "MIC": "XJAM",
+      "operatingMIC": "XJAM"
+    },
+    "JQ": {
+      "MIC": "XJAS",
+      "operatingMIC": "XJPX"
+    },
+    "SJ": {
+      "MIC": "XJSE",
+      "operatingMIC": "XJSE"
+    },
+    "PK": {
+      "MIC": "XKAR",
+      "operatingMIC": "XKAR"
+    },
+    "KZ": {
+      "MIC": "XKAZ",
+      "operatingMIC": "XKAZ"
+    },
+    "KF": {
+      "MIC": "XKFB",
+      "operatingMIC": "XKFB"
+    },
+    "MK": {
+      "MIC": "XKLS",
+      "operatingMIC": "XKLS"
+    },
+    "KE": {
+      "MIC": "XKON",
+      "operatingMIC": "XKRX"
+    },
+    "KP": {
+      "MIC": "XKRX",
+      "operatingMIC": "XKRX"
+    },
+    "KQ": {
+      "MIC": "XKOS",
+      "operatingMIC": "XKRX"
+    },
+    "KB": {
+      "MIC": "XKSE",
+      "operatingMIC": "XKSE"
+    },
+    "KK": {
+      "MIC": "XKUW",
+      "operatingMIC": "XKUW"
+    },
+    "LS": {
+      "MIC": "XLAO",
+      "operatingMIC": "XLAO"
+    },
+    "LD": {
+      "MIC": "XLDN",
+      "operatingMIC": "XLDN"
+    },
+    "PE": {
+      "MIC": "XLIM",
+      "operatingMIC": "XLIM"
+    },
+    "PL": {
+      "MIC": "XLIS",
+      "operatingMIC": "XLIS"
+    },
+    "LH": {
+      "MIC": "XLIT",
+      "operatingMIC": "XLIT"
+    },
+    "SV": {
+      "MIC": "XLJU",
+      "operatingMIC": "XLJU"
+    },
+    "LN": {
+      "MIC": "XLON",
+      "operatingMIC": "XLON"
+    },
+    "LY": {
+      "MIC": "XLSM",
+      "operatingMIC": "XLSM"
+    },
+    "ZL": {
+      "MIC": "XLUS",
+      "operatingMIC": "XLUS"
+    },
+    "LX": {
+      "MIC": "XLUX",
+      "operatingMIC": "XLUX"
+    },
+    "SN": {
+      "MIC": "XMAD",
+      "operatingMIC": "BMEX"
+    },
+    "MS": {
+      "MIC": "XMAE",
+      "operatingMIC": "XMAE"
+    },
+    "MV": {
+      "MIC": "XMAL",
+      "operatingMIC": "XMAL"
+    },
+    "NC": {
+      "MIC": "XMAN",
+      "operatingMIC": "XMAN"
+    },
+    "MZ": {
+      "MIC": "XBVM",
+      "operatingMIC": "XBVM"
+    },
+    "MP": {
+      "MIC": "XMAU",
+      "operatingMIC": "XMAU"
+    },
+    "SQ": {
+      "MIC": "XMCE",
+      "operatingMIC": "BMEX"
+    },
+    "MM": {
+      "MIC": "XMEX",
+      "operatingMIC": "XMEX"
+    },
+    "UY": {
+      "MIC": "XMNT",
+      "operatingMIC": "XMNT"
+    },
+    "ME": {
+      "MIC": "XMNX",
+      "operatingMIC": "XMNX"
+    },
+    "MB": {
+      "MIC": "XMOL",
+      "operatingMIC": "XMOL"
+    },
+    "MW": {
+      "MIC": "XMSW",
+      "operatingMIC": "XMSW"
+    },
+    "GM": {
+      "MIC": "XMUN",
+      "operatingMIC": "XMUN"
+    },
+    "OM": {
+      "MIC": "XMUS",
+      "operatingMIC": "XMUS"
+    },
+    "KN": {
+      "MIC": "XNAI",
+      "operatingMIC": "XNAI"
+    },
+    "NW": {
+      "MIC": "XNAM",
+      "operatingMIC": "XNAM"
+    },
+    "UR": {
+      "MIC": "XNCM",
+      "operatingMIC": "XNAS"
+    },
+    "AO": {
+      "MIC": "XNEC",
+      "operatingMIC": "XNEC"
+    },
+    "NK": {
+      "MIC": "XNEP",
+      "operatingMIC": "XNEP"
+    },
+    "EX": {
+      "MIC": "XNEW",
+      "operatingMIC": "XFRA"
+    },
+    "NG": {
+      "MIC": "XNGM",
+      "operatingMIC": "XNGM"
+    },
+    "JN": {
+      "MIC": "XNGO",
+      "operatingMIC": "XNGO"
+    },
+    "UW": {
+      "MIC": "XNGS",
+      "operatingMIC": "XNAS"
+    },
+    "UT": {
+      "MIC": "XNIM",
+      "operatingMIC": "XNAS"
+    },
+    "UQ": {
+      "MIC": "XNMS",
+      "operatingMIC": "XNAS"
+    },
+    "NL": {
+      "MIC": "XNSA",
+      "operatingMIC": "XNSA"
+    },
+    "IS": {
+      "MIC": "XNSE",
+      "operatingMIC": "XNSE"
+    },
+    "UN": {
+      "MIC": "XNYS",
+      "operatingMIC": "XNYS"
+    },
+    "NZ": {
+      "MIC": "XNZE",
+      "operatingMIC": "XNZE"
+    },
+    "JO": {
+      "MIC": "XOSE",
+      "operatingMIC": "XJPX"
+    },
+    "NO": {
+      "MIC": "XOSL",
+      "operatingMIC": "XOSL"
+    },
+    "UU": {
+      "MIC": "XOTC",
+      "operatingMIC": "XOTC"
+    },
+    "XO": {
+      "MIC": "XOPV",
+      "operatingMIC": "XSTO"
+    },
+    "PS": {
+      "MIC": "XPAE",
+      "operatingMIC": "XPAE"
+    },
+    "FP": {
+      "MIC": "XPAR",
+      "operatingMIC": "XPAR"
+    },
+    "UX": {
+      "MIC": "XPSX",
+      "operatingMIC": "XNAS"
+    },
+    "PM": {
+      "MIC": "XPHS",
+      "operatingMIC": "XPHS"
+    },
+    "PZ": {
+      "MIC": "ISDX",
+      "operatingMIC": "ICAP"
+    },
+    "PB": {
+      "MIC": "XPOM",
+      "operatingMIC": "XPOM"
+    },
+    "PO": {
+      "MIC": "XPOS",
+      "operatingMIC": "ITGI"
+    },
+    "PP": {
+      "MIC": "XPTY",
+      "operatingMIC": "XPTY"
+    },
+    "SX": {
+      "MIC": "XQMH",
+      "operatingMIC": "XQMH"
+    },
+    "QT": {
+      "MIC": "XQTX",
+      "operatingMIC": "XDUS"
+    },
+    "EQ": {
+      "MIC": "XQUI",
+      "operatingMIC": "XQUI"
+    },
+    "RQ": {
+      "MIC": "XRAS",
+      "operatingMIC": "XBSE"
+    },
+    "LG": {
+      "MIC": "XRIS",
+      "operatingMIC": "XRIS"
+    },
+    "RC": {
+      "MIC": "XRMZ",
+      "operatingMIC": "XRMZ"
+    },
+    "JS": {
+      "MIC": "XSAP",
+      "operatingMIC": "XSAP"
+    },
+    "KA": {
+      "MIC": "XSAT",
+      "operatingMIC": "XSAT"
+    },
+    "AB": {
+      "MIC": "XSAU",
+      "operatingMIC": "XSAU"
+    },
+    "JU": {
+      "MIC": "XSBI",
+      "operatingMIC": "SBIJ"
+    },
+    "C2": {
+      "MIC": "XSEC",
+      "operatingMIC": "XSHE"
+    },
+    "SP": {
+      "MIC": "XSES",
+      "operatingMIC": "XSES"
+    },
+    "CC": {
+      "MIC": "XSGO",
+      "operatingMIC": "XSGO"
+    },
+    "CS": {
+      "MIC": "XSHE",
+      "operatingMIC": "XSHE"
+    },
+    "CG": {
+      "MIC": "XSHG",
+      "operatingMIC": "XSHG"
+    },
+    "XE": {
+      "MIC": "XSMP",
+      "operatingMIC": "XSMP"
+    },
+    "FS": {
+      "MIC": "XSPS",
+      "operatingMIC": "XSPS"
+    },
+    "C1": {
+      "MIC": "XSSC",
+      "operatingMIC": "XSHG"
+    },
+    "BT": {
+      "MIC": "XSSE",
+      "operatingMIC": "XSSE"
+    },
+    "VM": {
+      "MIC": "XSTC",
+      "operatingMIC": "XSTC"
+    },
+    "ZU": {
+      "MIC": "XSTE",
+      "operatingMIC": "XSTE"
+    },
+    "SS": {
+      "MIC": "XSTO",
+      "operatingMIC": "XSTO"
+    },
+    "GS": {
+      "MIC": "XSTU",
+      "operatingMIC": "XSTU"
+    },
+    "EL": {
+      "MIC": "XSVA",
+      "operatingMIC": "XSVA"
+    },
+    "SD": {
+      "MIC": "XSWA",
+      "operatingMIC": "XSWA"
+    },
+    "SE": {
+      "MIC": "XSWX",
+      "operatingMIC": "XSWX"
+    },
+    "IT": {
+      "MIC": "XTAE",
+      "operatingMIC": "XTAE"
+    },
+    "ET": {
+      "MIC": "XTAL",
+      "operatingMIC": "XTAL"
+    },
+    "JG": {
+      "MIC": "XTAM",
+      "operatingMIC": "XJPX"
+    },
+    "IE": {
+      "MIC": "XTEH",
+      "operatingMIC": "XTEH"
+    },
+    "AL": {
+      "MIC": "XTIR",
+      "operatingMIC": "XTIR"
+    },
+    "JT": {
+      "MIC": "XTKS",
+      "operatingMIC": "XTKS"
+    },
+    "TP": {
+      "MIC": "XTRN",
+      "operatingMIC": "XTRN"
+    },
+    "CT": {
+      "MIC": "XTSE",
+      "operatingMIC": "XTSE"
+    },
+    "CV": {
+      "MIC": "XTSX",
+      "operatingMIC": "XTSX"
+    },
+    "TU": {
+      "MIC": "XTUN",
+      "operatingMIC": "XTUN"
+    },
+    "UK": {
+      "MIC": "UKEX",
+      "operatingMIC": "UKEX"
+    },
+    "S2": {
+      "MIC": "XUBS",
+      "operatingMIC": "XUBS"
+    },
+    "UG": {
+      "MIC": "XUGA",
+      "operatingMIC": "XUGA"
+    },
+    "MO": {
+      "MIC": "XULA",
+      "operatingMIC": "XULA"
+    },
+    "SA": {
+      "MIC": "XVAL",
+      "operatingMIC": "BMEX"
+    },
+    "PN": {
+      "MIC": "XVPA",
+      "operatingMIC": "XVPA"
+    },
+    "VX": {
+      "MIC": "XVTX",
+      "operatingMIC": "XSWX"
+    },
+    "PW": {
+      "MIC": "XWAR",
+      "operatingMIC": "XWAR"
+    },
+    "AV": {
+      "MIC": "XWBO",
+      "operatingMIC": "XWBO"
+    },
+    "ZA": {
+      "MIC": "XZAG",
+      "operatingMIC": "XZAG"
+    },
+    "ZH": {
+      "MIC": "XZIM",
+      "operatingMIC": "XZIM"
+    }
+  },
+  "MIC": {
+    "APXL": "PF",
+    "ARCX": "UP",
+    "ASXP": "AQ",
+    "AQXE": "QX",
+    "BATE": "EB",
+    "BATS": "UF",
+    "BATY": "VY",
+    "BCSE": "RB",
+    "BOAT": "XB",
+    "BLNK": "K3",
+    "BLOX": "B3",
+    "BMFX": "RZ",
+    "BOTC": "XV",
+    "BSEX": "AZ",
+    "BURG": "BY",
+    "CBSX": "UO",
+    "CHIA": "AH",
+    "CHIJ": "JI",
+    "CHIX": "IX",
+    "CHIC": "TX",
+    "DKTC": "DD",
+    "DIFX": "DU",
+    "DSMD": "QD",
+    "EDGA": "VJ",
+    "EDGX": "VK",
+    "ENAX": "AA",
+    "ETLX": "TE",
+    "EUWX": "GW",
+    "XBRN": "SR",
+    "FNFI": "FF",
+    "FNSE": "SF",
+    "GSXL": "TL",
+    "HMTF": "HM",
+    "HOTC": "XT",
+    "HSTC": "VH",
+    "ICEL": "UI",
+    "IEXG": "VF",
+    "FNIS": "RF",
+    "KABU": "JD",
+    "LICA": "TK",
+    "LIQU": "L3",
+    "LYNX": "DG",
+    "MALX": "MX",
+    "MATN": "TR",
+    "MCXX": "IG",
+    "MESQ": "MQ",
+    "MISX": "RX",
+    "MTAA": "IM",
+    "MTAH": "IF",
+    "WMTF": "PD",
+    "MUNB": "PG",
+    "NEOE": "QF",
+    "NILX": "EI",
+    "NOTC": "NS",
+    "NURD": "ES",
+    "NURO": "NQ",
+    "OMGA": "TG",
+    "OOTC": "UV",
+    "OPEX": "PX",
+    "PFTS": "UZ",
+    "PFTQ": "QU",
+    "OTCM": "PQ",
+    "PURE": "CJ",
+    "QMTF": "QM",
+    "ROCO": "TT",
+    "ROTC": "RW",
+    "RTSX": "RR",
+    "RUSX": "RT",
+    "SBIJ": "JE",
+    "SBIU": "JW",
+    "SHSC": "H1",
+    "SGMX": "S1",
+    "SIGX": "TY",
+    "SHAR": "A0",
+    "SIMV": "SI",
+    "SZSC": "H2",
+    "TMXS": "TJ",
+    "TOMX": "MT",
+    "TRPX": "SZ",
+    "TRQD": "DX",
+    "TRQX": "TQ",
+    "XATS": "TA",
+    "XADE": "AP",
+    "XADF": "UD",
+    "XADS": "DH",
+    "XALG": "AG",
+    "XAMM": "JR",
+    "XAMS": "NA",
+    "XARM": "AY",
+    "XASE": "UA",
+    "XASX": "AT",
+    "XATH": "GA",
+    "XBAA": "BM",
+    "XBAB": "BA",
+    "XBAH": "BI",
+    "XBAR": "SB",
+    "XBCL": "CE",
+    "XBCX": "AM",
+    "XBCV": "HO",
+    "XBDA": "BH",
+    "XBEL": "SG",
+    "XBER": "GB",
+    "XBEY": "LB",
+    "XBIL": "SO",
+    "XBKK": "TB",
+    "XBLB": "BK",
+    "XBNV": "CR",
+    "XBOG": "CX",
+    "XBOL": "VB",
+    "XBOM": "IB",
+    "XBOS": "UB",
+    "XBOT": "BG",
+    "XBRA": "SK",
+    "XBRU": "BB",
+    "XBRV": "IA",
+    "XBSE": "RE",
+    "XBUD": "HB",
+    "XBUE": "AF",
+    "XBUL": "BU",
+    "XBVC": "VR",
+    "XCAI": "EC",
+    "BVCA": "VS",
+    "XCAS": "MC",
+    "XCAY": "KY",
+    "XCHI": "UM",
+    "XCIE": "GU",
+    "XCIS": "UC",
+    "XCNQ": "CF",
+    "XCOL": "SL",
+    "XCSE": "DC",
+    "XCYS": "CY",
+    "XCSX": "KH",
+    "XCX2": "DS",
+    "XCXD": "DK",
+    "XDAR": "TZ",
+    "XDES": "IH",
+    "XDFM": "DB",
+    "XDHA": "BD",
+    "XDSE": "SY",
+    "XDSX": "DE",
+    "XDUB": "ID",
+    "XDUS": "GD",
+    "XECM": "YC",
+    "XECS": "EK",
+    "XEQT": "BQ",
+    "XETR": "GY",
+    "XFKA": "JF",
+    "FNDK": "DF",
+    "XFRA": "GF",
+    "XGAT": "TH",
+    "XGHA": "GN",
+    "XGSE": "GG",
+    "XGTG": "GL",
+    "XGUA": "EG",
+    "XHAM": "GH",
+    "XHAN": "GI",
+    "XHEL": "FH",
+    "XHFT": "NR",
+    "XHKG": "HK",
+    "XHNX": "VU",
+    "XICE": "IR",
+    "XICX": "TW",
+    "XIDX": "IJ",
+    "XIQS": "IQ",
+    "XISE": "UL",
+    "XIST": "TI",
+    "XJAM": "JA",
+    "XJAS": "JQ",
+    "XJSE": "SJ",
+    "XKAR": "PK",
+    "XKAZ": "KZ",
+    "XKFB": "KF",
+    "XKLS": "MK",
+    "XKON": "KE",
+    "XKRX": "KP",
+    "XKOS": "KQ",
+    "XKSE": "KB",
+    "XKUW": "KK",
+    "XLAO": "LS",
+    "XLDN": "LD",
+    "XLIM": "PE",
+    "XLIS": "PL",
+    "XLIT": "LH",
+    "XLJU": "SV",
+    "XLON": "LN",
+    "XLSM": "LY",
+    "XLUS": "ZL",
+    "XLUX": "LX",
+    "XMAD": "SN",
+    "XMAE": "MS",
+    "XMAL": "MV",
+    "XMAN": "NC",
+    "XBVM": "MZ",
+    "XMAU": "MP",
+    "XMCE": "SQ",
+    "XMEX": "MM",
+    "XMNT": "UY",
+    "XMNX": "ME",
+    "XMOL": "MB",
+    "XMSW": "MW",
+    "XMUN": "GM",
+    "XMUS": "OM",
+    "XNAI": "KN",
+    "XNAM": "NW",
+    "XNCM": "UR",
+    "XNEC": "AO",
+    "XNEP": "NK",
+    "XNEW": "EX",
+    "XNGM": "NG",
+    "XNGO": "JN",
+    "XNGS": "UW",
+    "XNIM": "UT",
+    "XNMS": "UQ",
+    "XNSA": "NL",
+    "XNSE": "IS",
+    "XNYS": "UN",
+    "XNZE": "NZ",
+    "XOSE": "JO",
+    "XOSL": "NO",
+    "XOTC": "UU",
+    "XOPV": "XO",
+    "XPAE": "PS",
+    "XPAR": "FP",
+    "XPSX": "UX",
+    "XPHS": "PM",
+    "ISDX": "PZ",
+    "XPOM": "PB",
+    "XPOS": "PO",
+    "XPTY": "PP",
+    "XQMH": "SX",
+    "XQTX": "QT",
+    "XQUI": "EQ",
+    "XRAS": "RQ",
+    "XRIS": "LG",
+    "XRMZ": "RC",
+    "XSAP": "JS",
+    "XSAT": "KA",
+    "XSAU": "AB",
+    "XSBI": "JU",
+    "XSEC": "C2",
+    "XSES": "SP",
+    "XSGO": "CC",
+    "XSHE": "CS",
+    "XSHG": "CG",
+    "XSMP": "XE",
+    "XSPS": "FS",
+    "XSSC": "C1",
+    "XSSE": "BT",
+    "XSTC": "VM",
+    "XSTE": "ZU",
+    "XSTO": "SS",
+    "XSTU": "GS",
+    "XSVA": "EL",
+    "XSWA": "SD",
+    "XSWX": "SE",
+    "XTAE": "IT",
+    "XTAI": "TT",
+    "XTAL": "ET",
+    "XTAM": "JG",
+    "XTEH": "IE",
+    "XTIR": "AL",
+    "XTKS": "JT",
+    "XTRN": "TP",
+    "XTSE": "CT",
+    "XTSX": "CV",
+    "XTUN": "TU",
+    "UKEX": "UK",
+    "XUBS": "S2",
+    "XUGA": "UG",
+    "XULA": "MO",
+    "XVAL": "SA",
+    "XVPA": "PN",
+    "XVTX": "VX",
+    "XWAR": "PW",
+    "XWBO": "AV",
+    "XZAG": "ZA",
+    "XZIM": "ZH"
+  },
+  "operatingMIC": {
+    "APXL": "PF",
+    "XNYS": "UN",
+    "XASX": "AT",
+    "AQXE": "QX",
+    "BCXE": "IX",
+    "BATS": "VY",
+    "BCSE": "RB",
+    "BOAT": "XB",
+    "CHEV": "K3",
+    "BLOX": "B3",
+    "BMFX": "RZ",
+    "BSEX": "AZ",
+    "XOSL": "NO",
+    "XCBO": "UO",
+    "CHIA": "AH",
+    "CHIJ": "JI",
+    "CHIC": "DS",
+    "DKTC": "DD",
+    "DIFX": "DU",
+    "DSMD": "QD",
+    "EDGE": "VK",
+    "ASEX": "GA",
+    "ETLX": "TE",
+    "XSTU": "GS",
+    "XBRN": "SR",
+    "XHEL": "FH",
+    "XSTO": "SS",
+    "GSXL": "TL",
+    "HMTF": "HM",
+    "HSTC": "VU",
+    "ICEL": "UI",
+    "IEXG": "VF",
+    "XICE": "IR",
+    "KABU": "JD",
+    "LICA": "TK",
+    "LIQU": "L3",
+    "OMGA": "TG",
+    "MALX": "MX",
+    "MATN": "TR",
+    "MCXX": "IG",
+    "XKLS": "MK",
+    "MISX": "RR",
+    "XMIL": "IF",
+    "XWAR": "PW",
+    "PLUS": "PG",
+    "NEOE": "QF",
+    "NILX": "EI",
+    "NOTC": "NS",
+    "NURO": "NQ",
+    "FINR": "UD",
+    "OPEX": "PX",
+    "PFTS": "QU",
+    "OTCM": "PQ",
+    "XCNQ": "CF",
+    "QMTF": "QM",
+    "ROCO": "TT",
+    "ROTC": "RW",
+    "RUSX": "RT",
+    "SBIJ": "JU",
+    "XHKG": "HK",
+    "SGMX": "S1",
+    "SIGX": "TY",
+    "SHAR": "A0",
+    "SIMV": "SI",
+    "TMXS": "TJ",
+    "TOMX": "MT",
+    "TRPX": "SZ",
+    "TRQX": "TQ",
+    "XATS": "TA",
+    "XADS": "DH",
+    "XALG": "AG",
+    "XAMM": "JR",
+    "XAMS": "NA",
+    "XARM": "AY",
+    "XBAA": "BM",
+    "XBAB": "BA",
+    "XBAH": "BI",
+    "BMEX": "SA",
+    "XBCL": "CE",
+    "XBCM": "AM",
+    "XBCV": "HO",
+    "XBDA": "BH",
+    "XBEL": "SG",
+    "XBER": "BQ",
+    "XBEY": "LB",
+    "XBKK": "TB",
+    "XBLB": "BK",
+    "XBNV": "CR",
+    "XBOG": "CX",
+    "XBOL": "VB",
+    "XBOM": "IB",
+    "XNAS": "UX",
+    "XBOT": "BG",
+    "XBRA": "SK",
+    "XBRU": "BB",
+    "XBRV": "IA",
+    "XBSE": "RQ",
+    "XBUD": "HB",
+    "XBUE": "AF",
+    "XBUL": "BU",
+    "XBVC": "VR",
+    "XCAI": "EC",
+    "BVCA": "VS",
+    "XCAS": "MC",
+    "XCAY": "KY",
+    "XCHI": "UM",
+    "XCIE": "GU",
+    "XCIS": "UC",
+    "XCOL": "SL",
+    "XCSE": "DF",
+    "XCYS": "YC",
+    "XCSX": "KH",
+    "XCXD": "DK",
+    "XDAR": "TZ",
+    "XDES": "IH",
+    "XDFM": "DB",
+    "XDHA": "BD",
+    "XDSE": "SY",
+    "XDSX": "DE",
+    "XDUB": "ID",
+    "XDUS": "QT",
+    "XECS": "EK",
+    "XFRA": "EX",
+    "XFKA": "JF",
+    "TGAT": "TH",
+    "XGHA": "GN",
+    "XGSE": "GG",
+    "XGTG": "GL",
+    "XGUA": "EG",
+    "XHAM": "GH",
+    "XHAN": "GI",
+    "XHFT": "NR",
+    "XICX": "TW",
+    "XIDX": "IJ",
+    "XIQS": "IQ",
+    "XISX": "UL",
+    "XIST": "TI",
+    "XJAM": "JA",
+    "XJPX": "JG",
+    "XJSE": "SJ",
+    "XKAR": "PK",
+    "XKAZ": "KZ",
+    "XKFB": "KF",
+    "XKRX": "KQ",
+    "XKSE": "KB",
+    "XKUW": "KK",
+    "XLAO": "LS",
+    "XLDN": "LD",
+    "XLIM": "PE",
+    "XLIS": "PL",
+    "XLIT": "LH",
+    "XLJU": "SV",
+    "XLON": "LN",
+    "XLSM": "LY",
+    "XLUS": "ZL",
+    "XLUX": "LX",
+    "XMAE": "MS",
+    "XMAL": "MV",
+    "XMAN": "NC",
+    "XBVM": "MZ",
+    "XMAU": "MP",
+    "XMEX": "MM",
+    "XMNT": "UY",
+    "XMNX": "ME",
+    "XMOL": "MB",
+    "XMSW": "MW",
+    "XMUN": "GM",
+    "XMUS": "OM",
+    "XNAI": "KN",
+    "XNAM": "NW",
+    "XNEC": "AO",
+    "XNEP": "NK",
+    "XNGM": "NG",
+    "XNGO": "JN",
+    "XNSA": "NL",
+    "XNSE": "IS",
+    "XNZE": "NZ",
+    "XOTC": "UU",
+    "XPAE": "PS",
+    "XPAR": "FP",
+    "XPHS": "PM",
+    "ICAP": "PZ",
+    "XPOM": "PB",
+    "ITGI": "PO",
+    "XPTY": "PP",
+    "XQMH": "SX",
+    "XQUI": "EQ",
+    "XRIS": "LG",
+    "XRMZ": "RC",
+    "XSAP": "JS",
+    "XSAT": "KA",
+    "XSAU": "AB",
+    "XSHE": "CS",
+    "XSES": "SP",
+    "XSGO": "CC",
+    "XSHG": "C1",
+    "XSMP": "XE",
+    "XSPS": "FS",
+    "XSSE": "BT",
+    "XSTC": "VM",
+    "XSTE": "ZU",
+    "XSVA": "EL",
+    "XSWA": "SD",
+    "XSWX": "VX",
+    "XTAE": "IT",
+    "XTAI": "TT",
+    "XTAL": "ET",
+    "XTEH": "IE",
+    "XTIR": "AL",
+    "XTKS": "JT",
+    "XTRN": "TP",
+    "XTSE": "CT",
+    "XTSX": "CV",
+    "XTUN": "TU",
+    "UKEX": "UK",
+    "XUBS": "S2",
+    "XUGA": "UG",
+    "XULA": "MO",
+    "XVPA": "PN",
+    "XWBO": "AV",
+    "XZAG": "ZA",
+    "XZIM": "ZH"
+  }
+}

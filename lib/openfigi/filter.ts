@@ -1,4 +1,4 @@
-import type OpenFIGI from "./main.ts";
+import type OpenFIGI from "../openfigi.ts";
 import type { SearchRequest, SearchResponse } from "./search.ts";
 
 interface FilterResponse extends SearchResponse {

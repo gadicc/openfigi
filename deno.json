@@ -9,10 +9,11 @@
     "exchanges": "deno run -A scripts/exchanges.ts",
     "mic-map": "deno run -A scripts/mic_map.ts",
     "build:npm": "deno run -A scripts/build_npm.ts",
-    "pre-commit": "deno check lib/main.ts && deno lint && deno fmt --check"
+    "pre-commit": "deno check lib/openfigi.ts lib/exchanges.ts && deno lint && deno fmt --check"
   },
   "exports": {
-    ".": "./lib/main.ts"
+    ".": "./lib/openfigi.ts",
+    "./exchanges": "./lib/exchanges.ts"
   },
   "imports": {
     "@deno/dnt": "jsr:@deno/dnt@^0.42.3",
@@ -26,11 +27,11 @@
   },
   "lint": {
     "include": ["."],
-    "exclude": ["npm/", "tests/fixtures/http", "lib/all_values.ts"]
+    "exclude": ["npm/", "tests/fixtures/http", "data/"]
   },
   "fmt": {
     "include": ["."],
-    "exclude": ["npm/", "tests/fixtures/http", "lib/all_values.ts"]
+    "exclude": ["npm/", "tests/fixtures/http", "data/"]
   },
   "publish": {
     "exclude": ["tests"]

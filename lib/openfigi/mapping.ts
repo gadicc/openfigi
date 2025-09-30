@@ -1,5 +1,5 @@
 // https://www.openfigi.com/api/documentation#v3-post-mapping
-import type OpenFIGI from "./main.ts";
+import type OpenFIGI from "../openfigi.ts";
 import type {
   CurrencyValue,
   ExchCodeValue,

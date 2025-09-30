@@ -4,7 +4,10 @@ import denoJson from "../deno.json" with { type: "json" };
 await emptyDir("./npm");
 
 await build({
-  entryPoints: ["./lib/main.ts"],
+  entryPoints: Object.entries(denoJson.exports).map(([key, value]) => ({
+    name: key,
+    path: value,
+  })),
   outDir: "./npm",
   test: false,
   shims: {

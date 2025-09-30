@@ -1,6 +1,6 @@
 import * as path from "@std/path";
 
-const OUTPUT_PATH = path.resolve("lib", "all_values.ts");
+const OUTPUT_PATH = path.resolve("lib", "openfigi", "all_values.ts");
 
 const props = [
   ["exchCode", "All possible EXCHANGE CODE values."],
