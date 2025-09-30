@@ -7,6 +7,7 @@
     "test": "deno test -A",
     "retrieve": "deno run -A scripts/retrieve.ts",
     "exchanges": "deno run -A scripts/exchanges.ts",
+    "mic-map": "deno run -A scripts/mic_map.ts",
     "build:npm": "deno run -A scripts/build_npm.ts",
     "pre-commit": "deno check lib/main.ts && deno lint && deno fmt --check"
   },
@@ -20,7 +21,8 @@
     "@std/expect": "jsr:@std/expect@^1.0.17",
     "@std/path": "jsr:@std/path@^1.1.2",
     "@std/testing": "jsr:@std/testing@^1.0.15",
-    "semantic-release": "npm:semantic-release@^24.2.9"
+    "semantic-release": "npm:semantic-release@^24.2.9",
+    "xlsx": "npm:xlsx@^0.18.5"
   },
   "lint": {
     "include": ["."],
