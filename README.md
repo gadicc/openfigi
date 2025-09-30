@@ -48,6 +48,31 @@ This package servers as an opinionated, less-verbose alternative to simply using
 the schema with regular tools - the overriding goal being a good developer
 experience (DX).
 
+## OpenFIGI Limitations
+
+1. **OpenFIGI does not return third-party proprietary identifiers** (examples:
+   ISIN, CUSIP, SEDOL) through its public API because of licensing /
+   redistribution restrictions.
+
+   **You can submit those identifiers as input** (they’re accepted as
+   idType/idValue in mapping requests), but they will not be returned back in
+   the mapping results. Some identifier fields are available only in Bloomberg’s
+   licensed products / data license offerings or terminal, not via the free
+   OpenFIGI site/API.
+
+   Practically speaking, even if you specify an identifier for a **single
+   listing** (e.g. a SEDOL), your request will map back to an underlying
+   identifier and return **all listings of that identifier** (and not a single
+   result). So, you can't reconstruct such data through reverse queries. You can
+   however, use request filters such as `exchCode`, `micCode`, `marketSecDes`,
+   etc., to narrow mapping results when you need a specific listing or
+   market-level match.
+
+   If you’re new to finance or coming from the open-source world, these
+   restrictions are common - redistributable copies of proprietary identifiers
+   typically require a commercial license and contractual controls, and even
+   audits.
+
 ## Roadmap
 
 - [ ] APIs
