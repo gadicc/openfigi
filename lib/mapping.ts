@@ -220,7 +220,16 @@ export type MappingJobObject = {
 
 /** Response for a POST mapping request */
 export interface PostMappingResponse {
+  /** Is present when FIGI(s) are found for the associated Mapping Job. */
   data?: MappingJobObject[];
+  /**
+   * Is present when
+   * - Single job result exceeds 15,000 FIGIs.
+   * - There was an unexpected error when processing the request.
+   */
+  error?: string;
+  /** Is present when no FIGI is found. */
+  warning?: string;
 }
 
 /**

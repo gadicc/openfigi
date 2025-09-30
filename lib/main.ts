@@ -1,6 +1,9 @@
 import mapping from "./mapping.ts";
-export { mapping };
+import search from "./search.ts";
+export { mapping, search };
+
 export * from "./mapping.ts";
+export * from "./search.ts";
 
 function envApiKey(): string | null | undefined {
   const status = Deno.permissions.querySync({
@@ -42,6 +45,8 @@ export default class OpenFIGI {
 
   /** See {@linkcode mapping} */
   mapping = mapping;
+  /** See {@linkcode search} */
+  search = search;
 
   /**
    * Internal fetch wrapper for common code used by modules, i.e.
