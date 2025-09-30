@@ -1,0 +1,19 @@
+import type OpenFIGI from "./main.ts";
+import type { SearchRequest, SearchResponse } from "./search.ts";
+
+interface FilterResponse extends SearchResponse {
+  total?: number;
+}
+
+/**
+ * Search for FIGIs using key words and other filters. The results are
+ * listed alphabetically by FIGI and include the number of results.
+ */
+export default async function filter(this: OpenFIGI, query: SearchRequest) {
+  const response = await this.fetch("/filter", {
+    method: "POST",
+    body: query as Record<string, unknown>,
+  });
+
+  return await response.json() as Promise<FilterResponse>;
+}
