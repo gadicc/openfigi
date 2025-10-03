@@ -5,6 +5,7 @@
   "description": "Small typed API over OpenFIGI for better DX",
   "tasks": {
     "test": "deno test -A",
+    "coverage": "deno task test --coverage && deno coverage --lcov --output=lcov.info ./coverage",
     "retrieve": "deno run -A scripts/retrieve.ts",
     "exchanges": "deno run -A scripts/exchanges.ts",
     "mic-map": "deno run -A scripts/mic_map.ts",
