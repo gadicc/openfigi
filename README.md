@@ -147,6 +147,42 @@ See [`scripts/mic_map.ts`](./scripts/mic_map.ts) and
 [`scripts/exchanges.ts`](./scripts/exchanges.ts) to see how this data is
 generated and what sources were used.
 
+## Error Handling
+
+There are two "layers" of errors that you should handle.
+
+1. **try-catch**
+
+   Covers network errors and HTTP error codes like "HTTP 401: Unauthorized;
+   Invalid API key.".
+
+   ```ts
+   try {
+     await openfigi.mapping(/* ... */);
+   } catch (error) {
+     // Decide what to do
+   }
+   ```
+
+2. **Response `{ error: "error info" }`**
+
+   For when you do get a result object back, but the request could not complete.
+
+   ```ts
+   const result = await openfigi.mapping(/* ... */);
+   if (result.error) {
+     // e.g. Single job result exceeds 15,000 FIGIs.
+     console.log(result.error);
+     return;
+   } else if (result.warning) {
+     // present when no FIGI is found.
+     console.log(result.warning);
+     return;
+   }
+   // Now we know this will exist
+   console.log(result.data);
+   ```
+
 ## Roadmap
 
 - [ ] Validation
