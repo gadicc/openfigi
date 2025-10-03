@@ -24,4 +24,17 @@ describe("mapping", () => {
     expect(response?.[0].data?.length).toBeGreaterThan(0);
     expect(response?.[0].data?.[0].figi).toBe("BBG000B9XRY4");
   });
+
+  describe("error handling", () => {
+    it("no-throwing errors: e.g. invalid idType", async () => {
+      // @ts-expect-error: yup, this is what we're testing for
+      const result = await openfigi.mapping([{
+        idType: "INVALID",
+        idValue: "AAPL",
+        exchCode: "US",
+      }]);
+      expect(result[0].data).toBeUndefined();
+      expect(result[0].error).toBe("Invalid value for idType.");
+    });
+  });
 });
