@@ -1,14 +1,8 @@
 import * as path from "@std/path";
 import createFetchCache from "@gadicc/fetch-mock-cache/runtimes/deno.ts";
 import Store from "@gadicc/fetch-mock-cache/stores/fs.ts";
-import __micMap from "../data/mic_map.json" with { type: "json" };
-import type { ExchCodeValue } from "../lib/openfigi/all_values.ts";
 
-const _micMap: Partial<
-  Record<ExchCodeValue, { MIC: string; operatingMIC: string }>
-> = __micMap;
-
-const DEV_MODE = true;
+const DEV_MODE = false;
 const OUTPUT_FILE = path.join(Deno.cwd(), "data", "exchanges.json");
 const EXCHANGE_CODES_URL =
   "https://www.openfigi.com/assets/content/OpenFIGI_Exchange_Codes-3d3e5936ba.csv";
