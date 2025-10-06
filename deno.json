@@ -10,7 +10,7 @@
     "exchanges": "deno run -A scripts/exchanges.ts",
     "mic-map": "deno run -A scripts/mic_map.ts",
     "build:npm": "deno run -A scripts/build_npm.ts",
-    "pre-commit": "deno check lib/openfigi.ts lib/exchanges.ts && deno lint && deno fmt --check"
+    "pre-commit": "deno check lib/**/*.ts scripts/**/*.ts tests/**/*.ts && deno lint && deno fmt --check"
   },
   "exports": {
     ".": "./lib/openfigi.ts",
