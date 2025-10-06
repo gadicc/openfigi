@@ -186,3 +186,6 @@ There are two "layers" of errors that you should handle.
 ## Roadmap
 
 - [ ] Validation
+- [ ] Auto batch >= 100 mapping jobs per request
+- [ ] Auto "next" helper?
+- [ ] Rate limiting? Based on whether or not a key provided?
