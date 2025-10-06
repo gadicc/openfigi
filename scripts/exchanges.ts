@@ -14,6 +14,7 @@ if (DEV_MODE) {
 
 const request = await fetch(EXCHANGE_CODES_URL);
 const text = await request.text();
+// TODO? Consider a proper CSV parser in case we ever get commas in fields.  @std/csv maybe?
 const rows = text
   .split("\n")
   .map((l) => l.trim())
@@ -109,7 +110,7 @@ if (typeCount !== 2) {
 
 console.log(`Total rows: ${Object.keys(out).length} (${type} types)`);
 
-Deno.writeTextFile(
+await Deno.writeTextFile(
   OUTPUT_FILE,
   JSON.stringify(out, null, 2),
 );

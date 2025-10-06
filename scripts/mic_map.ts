@@ -52,7 +52,7 @@ const out = {
   operatingMIC: operatingMICMap,
 };
 
-Deno.writeTextFile(
+await Deno.writeTextFile(
   OUTPUT_FILE,
   JSON.stringify(out, null, 2),
 );
