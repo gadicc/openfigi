@@ -9,11 +9,14 @@ interface FilterResponse extends SearchResponse {
  * Search for FIGIs using key words and other filters. The results are
  * listed alphabetically by FIGI and include the number of results.
  */
-export default async function filter(this: OpenFIGI, query: SearchRequest) {
+export default async function filter(
+  this: OpenFIGI,
+  query: SearchRequest,
+): Promise<FilterResponse> {
   const response = await this.fetch("/filter", {
     method: "POST",
     body: query as Record<string, unknown>,
   });
 
-  return await response.json() as Promise<FilterResponse>;
+  return await response.json() as FilterResponse;
 }

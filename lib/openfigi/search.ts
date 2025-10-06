@@ -44,5 +44,5 @@ export default async function search(
     body: query as Record<string, unknown>,
   });
 
-  return await response.json() as Promise<SearchResponse>;
+  return await response.json() as SearchResponse;
 }
