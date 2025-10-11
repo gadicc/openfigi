@@ -79,6 +79,7 @@ export default class OpenFIGI {
     method?: "GET" | "POST";
     body?: Record<string, unknown>;
     params?: Record<string, string | number>;
+    fetchOptions?: Partial<RequestInit>;
   } = {}): Promise<Response> {
     const headers = new Headers({
       "Content-Type": "application/json",
@@ -95,6 +96,7 @@ export default class OpenFIGI {
         method: opts.method || "GET",
         headers,
         body: opts.body ? JSON.stringify(opts.body) : undefined,
+        ...opts.fetchOptions,
       },
     );
 

@@ -38,10 +38,12 @@ export type SearchResponse = {
 export default async function search(
   this: OpenFIGI,
   query: SearchRequest,
+  opts: { fetchOptions?: Partial<RequestInit> } = {},
 ): Promise<SearchResponse> {
   const response = await this._fetch("/search", {
     method: "POST",
     body: query as Record<string, unknown>,
+    fetchOptions: opts.fetchOptions,
   });
 
   return await response.json() as SearchResponse;

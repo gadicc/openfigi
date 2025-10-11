@@ -12,10 +12,12 @@ interface FilterResponse extends SearchResponse {
 export default async function filter(
   this: OpenFIGI,
   query: SearchRequest,
+  opts: { fetchOptions?: Partial<RequestInit> } = {},
 ): Promise<FilterResponse> {
   const response = await this._fetch("/filter", {
     method: "POST",
     body: query as Record<string, unknown>,
+    fetchOptions: opts.fetchOptions,
   });
 
   return await response.json() as FilterResponse;

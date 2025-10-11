@@ -243,6 +243,7 @@ export interface PostMappingResponse {
 export default async function mapping(
   this: OpenFIGI,
   params: GetMappingParams,
+  opts?: { fetchOptions?: Partial<RequestInit> },
 ): Promise<GetMappingResponse>;
 
 /**
@@ -279,11 +280,13 @@ export default async function mapping(
 export default async function mapping(
   this: OpenFIGI,
   params: PostMappingRequest,
+  opts?: { fetchOptions?: Partial<RequestInit> },
 ): Promise<PostMappingResponse[]>;
 
 export default async function mapping(
   this: OpenFIGI,
   params: GetMappingParams | PostMappingRequest,
+  opts: { fetchOptions?: Partial<RequestInit> } = {},
 ): Promise<GetMappingResponse | PostMappingResponse[]> {
   if (typeof params !== "object" || params === null) {
     throw new Error("params must be an object");
@@ -300,7 +303,9 @@ export default async function mapping(
         }`,
       );
     }
-    const response = await this._fetch("/mapping/values/" + params.value);
+    const response = await this._fetch("/mapping/values/" + params.value, {
+      fetchOptions: opts.fetchOptions,
+    });
     return (await response.json()) as GetMappingResponse;
   }
 
@@ -313,6 +318,7 @@ export default async function mapping(
   const response = await this._fetch("/mapping", {
     method: "POST",
     body: params as unknown as Record<string, unknown>,
+    fetchOptions: opts.fetchOptions,
   });
 
   return (await response.json()) as PostMappingResponse[];

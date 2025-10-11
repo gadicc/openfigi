@@ -23,4 +23,14 @@ describe("openfigi", () => {
         .rejects.toThrow("HTTP 401: Unauthorized; Invalid API key.");
     });
   });
+
+  describe("_fetch", () => {
+    it("passes fetchOptions", async () => {
+      await expect(openfigi._fetch("blah", {
+        fetchOptions: {
+          signal: AbortSignal.timeout(1),
+        },
+      })).rejects.toThrow("Signal timed out.");
+    });
+  });
 });

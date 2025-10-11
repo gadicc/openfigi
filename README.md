@@ -52,6 +52,13 @@ const result = await openfigi.filter({
   marketSecDes: "Equity",
   securityType: "Common Stock",
 });
+
+// All methods accept an optional options parameter with fetchOptions
+await openfigi.{mapping,filter,search}({ /* ... */ }, {
+  fetchOptions: {
+    signal: AbortSignal.timeout(5_000)
+  }
+});
 ```
 
 **API docs**: https://jsr.io/@gadicc/openfigi/doc/~/OpenFIGI
