@@ -75,7 +75,7 @@ export default class OpenFIGI {
    * @returns Fetch Response
    * @throws Error if response is not ok (status not in 200-299 range)
    */
-  async fetch(endpoint: string, opts: {
+  async _fetch(endpoint: string, opts: {
     method?: "GET" | "POST";
     body?: Record<string, unknown>;
     params?: Record<string, string | number>;

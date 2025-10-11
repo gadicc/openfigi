@@ -39,7 +39,7 @@ export default async function search(
   this: OpenFIGI,
   query: SearchRequest,
 ): Promise<SearchResponse> {
-  const response = await this.fetch("/search", {
+  const response = await this._fetch("/search", {
     method: "POST",
     body: query as Record<string, unknown>,
   });

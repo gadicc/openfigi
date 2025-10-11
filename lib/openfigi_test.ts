@@ -7,7 +7,7 @@ describe("openfigi", () => {
 
   describe("error handling", () => {
     it("http errors", async () => {
-      await expect(openfigi.fetch("/invalid-endpoint", { method: "GET" }))
+      await expect(openfigi._fetch("/invalid-endpoint", { method: "GET" }))
         .rejects.toThrow("HTTP 404: Not Found; Invalid url.");
     });
 

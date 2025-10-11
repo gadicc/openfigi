@@ -13,7 +13,7 @@ export default async function filter(
   this: OpenFIGI,
   query: SearchRequest,
 ): Promise<FilterResponse> {
-  const response = await this.fetch("/filter", {
+  const response = await this._fetch("/filter", {
     method: "POST",
     body: query as Record<string, unknown>,
   });

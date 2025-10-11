@@ -300,7 +300,7 @@ export default async function mapping(
         }`,
       );
     }
-    const response = await this.fetch("/mapping/values/" + params.value);
+    const response = await this._fetch("/mapping/values/" + params.value);
     return (await response.json()) as GetMappingResponse;
   }
 
@@ -310,7 +310,7 @@ export default async function mapping(
     );
   }
 
-  const response = await this.fetch("/mapping", {
+  const response = await this._fetch("/mapping", {
     method: "POST",
     body: params as unknown as Record<string, unknown>,
   });
